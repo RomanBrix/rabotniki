@@ -12,6 +12,7 @@ class About extends React.Component {
         <p>Natus rerum animi perspiciatis nulla officiis, laboriosam culpa tenetur neque velit ipsa non nemo quas, unde praesentium asperiores. Quam omnis nemo qui harum quo possimus doloremque quisquam fuga quasi nihil dolor modi officia, et neque delectus hic placeat enim ullam molestias accusantium veritatis nostrum aliquid dolores aut illo? Quis, laborum.</p>
         <p>Asperiores aspernatur dignissimos tenetur sequi quos? Molestiae laborum vel et ducimus iure. Ipsa eum perspiciatis numquam eligendi neque, ipsum labore error, explicabo dolor asperiores, officia quisquam! Obcaecati aspernatur consectetur minus eum repellat! Deserunt aut quidem placeat modi? Fugiat reiciendis magnam, repellendus ipsam officiis, architecto molestiae, impedit sunt quae vero ipsum?</p>
         </div>
+        
       </div>
     )
   }
