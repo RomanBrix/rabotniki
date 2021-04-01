@@ -1,14 +1,13 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Header from './Layers/Header';
 import Main from './Main';
 import About from './About';
 import Contact from './Contact';
+import Item from './Main/Item';
 
 class App extends React.Component {
   render () {
@@ -19,10 +18,10 @@ class App extends React.Component {
 
           <Switch>
             <Route path="/" exact>
-              <Main {...this.props}/>
+              <Main changeURL={this.changeURL.bind(this)} {...this.props}/>
             </Route>
 
-
+            <Route path="/categories/:id" exact render={pr => <Item changeURL={this.changeURL.bind(this)} {...pr}/>}/>
 
             <Route path="/about">
               <About {...this.props}/>
@@ -30,6 +29,10 @@ class App extends React.Component {
 
             <Route path="/contact">
               <Contact {...this.props}/>
+            </Route>
+
+            <Route>
+              <div>No match</div>
             </Route>
           </Switch>
         </React.Fragment>

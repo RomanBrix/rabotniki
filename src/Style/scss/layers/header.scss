@@ -23,7 +23,7 @@
         transition: .25s;
         img{
           width: 165px;
-           filter: drop-shadow(3px 3px 3px #5385c2);
+           filter: drop-shadow(3px 3px 3px rgba(83, 133, 194, .45));
         }
         &:hover{
           transform: scale(1.1);

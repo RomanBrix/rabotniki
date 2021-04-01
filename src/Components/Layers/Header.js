@@ -12,7 +12,7 @@ class Header extends React.Component {
       <div className="header">
         <div className="content-box">
         <div className="top">
-          <div className="logo" onClick={()=>{changeURL('/')}}><img src="./src/logo.jpg" alt=""/></div>
+          <div className="logo" onClick={()=>{changeURL('/')}}><img src="/src/logo.jpg" alt=""/></div>
 
           <div className="contacts-header">
             <ul>

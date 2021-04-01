@@ -1,0 +1,125 @@
+.contact{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 25px;
+  .content-box{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #252525;
+    flex-wrap: wrap;
+  .title{
+    width: 100%;
+    h1{
+      margin-bottom: 0;
+    }
+    p{
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+  .left{
+    width: 47%;
+    position: relative;
+    box-sizing: border-box;
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{
+        margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        a{
+          color: inherit;
+          text-decoration: none;
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          transition: .25s;
+          position: relative;
+          i{
+            color: #5385c2;
+            font-size: 23px;
+            margin-bottom: -2px;
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 0%;
+            transition: .25s;
+            background: #5385c2;
+          }
+          &:hover{
+            color: #5385c2;
+
+            &:after{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background: #5a86c7 linear-gradient(180deg, #345e9b, #5a86c7, #2a4c7d) repeat-x;
+      top: 0;
+      right: -1.5%;
+    }
+  }
+  .right{
+    width: 47%;
+    box-sizing: border-box;
+
+    .form{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      // border: 1px solid red;
+      height: 100%;
+      box-sizing: border-box;
+      min-height: 230px;
+      padding: 15px 8px;
+      input{
+        box-sizing: border-box;
+        // margin-bottom: 15px;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .15rem;
+        width: 225px;
+        border: 1px solid #5385c2;
+        padding: 4px 5px;
+      }
+      textarea{
+        box-sizing: border-box;
+        width: 70%;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .15rem;
+        border: 1px solid #5385c2;
+        padding: 4px 5px;
+        height: 70px;
+        resize: none;
+      }
+      .btn-send{}
+    }
+  }
+}
+}

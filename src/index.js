@@ -5,9 +5,7 @@ import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 ReactDOM.render(
