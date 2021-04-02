@@ -14,12 +14,56 @@ import { WORK } from '../Data';
             )
           }
           return (
-            <div>
-              <h1>ID is : {ID}</h1>
-              <p>{WORK[ID-1].title}</p>
+            <div className='item'>
+              <div className="content-box">
+              <div className="btn btn-back" onClick={()=>{
+                this.props.changeURL('/');
+              }}>
+                <i className='icon-left-outline'/>Вернуться назад
+              </div>
+                <h1>{WORK[ID - 1].title}</h1>
+                <table id="prices">
+                  <thead>
+                    <tr>
+                      <th>Название услуги</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    { this.renderTableWorks(WORK[ID - 1].works, WORK[ID - 1].pr)}
+                  </tbody>
+                </table>
+              </div>
             </div>
           );
         }
+
+
+
+      renderTableWorks(work, tag ){
+            return work.map((item, index)=>{
+              return (
+                <tr key={index}>
+                  <td>{item.name}</td>
+                  <td><b>{item.price}</b> { this.renderTag(tag)}</td>
+               </tr>
+              )
+            })
       }
+
+
+      renderTag(tag){
+        switch (tag) {
+          case 'm2':
+          return <span>грн/м<sup className="quad">2</sup></span>
+
+
+
+            break;
+          default:
+
+        }
+      }
+    }
 
       export default  Item;

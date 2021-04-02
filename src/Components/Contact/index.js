@@ -14,7 +14,7 @@ class Contact extends React.Component {
             <ul>
               <li>
                 <a href="https://goo.gl/maps/edeGhTy74E4ziSrP7">
-                  <i className='icon-folder-empty'/>
+                  <i className='icon-location'/>
                   13B, Akademika Glushkov ave., Київ, 03187
                 </a>
 
@@ -39,13 +39,13 @@ class Contact extends React.Component {
               </li>
               <li>
                 <a href="tg://resolve?domain=diamantikc">
-                  <i className='icon-folder-empty'/>
+                  <i className='icon-paper-plane-empty'/>
                   Telegram
                 </a>
               </li>
               <li>
                 <a href="mailto:grabuds@ukr.net">
-                  <i className='icon-folder-empty'/>
+                  <i className='icon-mail'/>
                   grabuds@ukr.net
                 </a>
               </li>
