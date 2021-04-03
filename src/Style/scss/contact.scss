@@ -123,3 +123,44 @@
   }
 }
 }
+
+@media  (max-width:500px) {
+  .contact{
+    .content-box{
+      flex-direction: column;
+    .title{
+      h1{}
+      p{}
+    }
+    .left{
+      width: 100%;
+      ul{
+        li{
+          a{
+            i{
+            }
+            &:after{
+
+            }
+            &:hover{
+              &:after{}
+            }
+          }
+        }
+      }
+      &:before{
+        display: none;
+      }
+    }
+    .right{
+      width: 100%;
+
+      .form{
+        input{}
+        textarea{}
+        .btn-send{}
+      }
+    }
+  }
+  }
+}

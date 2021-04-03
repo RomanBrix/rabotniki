@@ -26,11 +26,15 @@
         // border-radius: 5px;
 
         padding: 8px;
+
+        @media  (max-width:500px) {
+          min-width: 55px;
+        }
         .quad{
 
         }
       }
-    
+
       tr:nth-child(even){background-color: #f2f2f2;}
       tr:hover {background-color: #ddd;}
       th {
