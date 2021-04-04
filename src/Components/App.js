@@ -8,17 +8,31 @@ import Main from './Main';
 import About from './About';
 import Contact from './Contact';
 import Item from './Main/Item';
+import Callback from './Layers/Callback';
 
 class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      cb: false
+    }
+  }
   render () {
-// console.log(this.props)
+    const { cb } = this.state ;
     return(
         <React.Fragment>
-         <Header changeURL={this.changeURL.bind(this)} {...this.props}/>
+         <Header changeURL={this.changeURL.bind(this)} getData={this.getData.bind(this)} toggleCB={this.toggleCB.bind(this)} {...this.props}/>
+         {
+           cb ?
+           <Callback getData={this.getData.bind(this)} toggleCB={this.toggleCB.bind(this)} {...this.props}/>
+           :
+           ''
+         }
+
 
           <Switch>
             <Route path="/" exact>
-              <Main changeURL={this.changeURL.bind(this)} {...this.props}/>
+              <Main changeURL={this.changeURL.bind(this)} getData={this.getData.bind(this)} {...this.props}/>
             </Route>
 
             <Route path="/categories/:id" exact render={pr => <Item changeURL={this.changeURL.bind(this)} {...pr}/>}/>
@@ -28,7 +42,7 @@ class App extends React.Component {
             </Route>
 
             <Route path="/contact">
-              <Contact {...this.props}/>
+              <Contact {...this.props} getData={this.getData.bind(this)}/>
             </Route>
 
             <Route>
@@ -40,7 +54,15 @@ class App extends React.Component {
     )
   }
 
+  getData(data){
+    console.log(data);
+  }
 
+  toggleCB(st){
+    this.setState({
+      cb: st
+    })
+  }
   changeURL(to){
     const { history } = this.props;
 
