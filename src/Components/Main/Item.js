@@ -55,12 +55,9 @@ import { WORK } from '../Data';
       renderTag(tag){
         switch (tag) {
           case 'm2':
-          return <span>грн/м<sup className="quad">2</sup></span>
-
-
-
-            break;
+            return <span>грн/м<sup className="quad">2</sup></span>
           default:
+          return <span>грн/м<sup className="quad">2</sup></span>
 
         }
       }

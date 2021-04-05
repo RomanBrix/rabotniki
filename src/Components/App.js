@@ -3,6 +3,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import axios from 'axios';
 import Header from './Layers/Header';
 import Main from './Main';
 import About from './About';
@@ -56,6 +57,20 @@ class App extends React.Component {
 
   getData(data){
     console.log(data);
+    axios.post('/send.php',data)
+    .then((res)=>{
+      console.log(res);
+      if(res.data ==='ok'){
+        if(data.name === 'Просит позвонить!'){
+          alert('Ожидай звонка!');
+        }
+        // document.location.replace('/thank.html');
+
+      }
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
   }
 
   toggleCB(st){

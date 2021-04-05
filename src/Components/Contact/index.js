@@ -14,38 +14,38 @@ class Contact extends React.Component {
           </div>
           <div className="left">
             <ul>
-              <li onClick={()=>{getData('Кто-то смотрит местоположения ')}}>
+              <li onClick={()=>{getData({name: 'Кто-то смотрит местоположения '})}}>
                 <a href="https://goo.gl/maps/edeGhTy74E4ziSrP7">
                   <i className='icon-location'/>
                   13B, Akademika Glushkov ave., Київ, 03187
                 </a>
 
               </li>
-              <li onClick={()=>{getData('Звонят по номеру: 380 67 270 57 53')}}>
+              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 67 270 57 53'})}}>
                 <a href="tel:380672705753">
                   <i className='icon-phone'/>
                   067 270 57 53
                 </a>
               </li>
-              <li onClick={()=>{getData('Звонят по номеру: 380 93 371 51 84')}}>
+              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 93 371 51 84'})}}>
                 <a href="tel:380933715184" >
                   <i className='icon-phone'/>
                   093 371 51 84
                 </a>
               </li>
-              <li onClick={()=>{getData('Звонят по номеру: 380 95 733 14 90')}}>
+              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 95 733 14 90'})}}>
                 <a href="tel:380957331490">
                   <i className='icon-phone'/>
                   095 733 14 90
                 </a>
               </li>
-              <li onClick={()=>{getData('Кто-то смотрит телеграм')}}>
+              <li onClick={()=>{getData({name: 'Кто-то смотрит телеграм'})}}>
                 <a href="tg://resolve?domain=diamantikc">
                   <i className='icon-paper-plane-empty'/>
                   Telegram
                 </a>
               </li>
-              <li onClick={()=>{getData('Кто-то нажал на почту!')}}>
+              <li onClick={()=>{getData({name: 'Кто-то нажал на почту!'})}}>
                 <a href="mailto:grabuds@ukr.net">
                   <i className='icon-mail'/>
                   grabuds@ukr.net
@@ -66,8 +66,11 @@ class Contact extends React.Component {
                   getData({
                     name,
                     tel,
-                    msg
+                    ad_info:{
+                      msg
+                    }
                   })
+                  alert('Спасибо, ожидайте связи!');
                 }else{
                   alert('Не все поля заполнены');
                 }

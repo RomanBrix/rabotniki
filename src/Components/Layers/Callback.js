@@ -8,7 +8,7 @@ import React, { Component } from "react";
         }
       }
       render() {
-        const { toggleCB } = this.props;
+        const { toggleCB, getData } = this.props;
         return (
           <div className='callback' onClick={()=>{toggleCB(false)}}>
             <div className="form" onClick={(e)=>{e.stopPropagation()}}>
@@ -17,12 +17,15 @@ import React, { Component } from "react";
               <label htmlFor="tel">Номер телефона:</label>
               <input type="number" value={this.state.num} onChange={({target})=>{this.handleChange(target)}} placeholder='(000) 000 00 00' id='tel'/>
               <div className="btn btn-call" onClick={()=>{
-                const { getData } = this.props;
                 const { num } = this.state;
                 if(num.length !== 10){
                   alert('Номер указан не верно')
                 }else{
-                  getData(num);
+                  getData({
+                    name: 'Просит позвонить!',
+                    tel: num
+                  });
+                  toggleCB(false)
                 }
               }}>Позвоните мне</div>
             </div>

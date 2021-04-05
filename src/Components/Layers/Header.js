@@ -17,13 +17,13 @@ class Header extends React.Component {
 
           <div className="contacts-header">
             <ul>
-              <li onClick={()=>{getData('Звонят по номеру: 380 67 270 57 53')}}>
+              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 67 270 57 53'})}}>
                 <a href="tel:380672705753"><i className='icon-phone'/> 067 270 57 53</a>
               </li>
-              <li onClick={()=>{getData('Звонят по номеру: 380 93 371 51 84')}}>
+              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 93 371 51 84'})}}>
                 <a href="tel:380933715184"><i className='icon-phone'/> 093 371 51 84</a>
               </li>
-              <li onClick={()=>{getData('Звонят по номеру: 380 95 733 14 90')}}>
+              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 95 733 14 90'})}}>
                 <a href="tel:380957331490"><i className='icon-phone'/> 095 733 14 90</a>
               </li>
             </ul>
