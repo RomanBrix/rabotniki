@@ -45,7 +45,7 @@ import { WORK } from '../Data';
               return (
                 <tr key={index}>
                   <td>{item.name}</td>
-                  <td><b>{item.price}</b> { this.renderTag(tag)}</td>
+                  <td>от <b>{item.price}</b> { this.renderTag(tag)}</td>
                </tr>
               )
             })

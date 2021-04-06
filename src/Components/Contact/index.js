@@ -14,39 +14,39 @@ class Contact extends React.Component {
           </div>
           <div className="left">
             <ul>
-              <li onClick={()=>{getData({name: 'Кто-то смотрит местоположения '})}}>
-                <a href="https://goo.gl/maps/edeGhTy74E4ziSrP7">
+              <li>
+                <a href="https://goo.gl/maps/p2bFdqmGY1Vj5ApU8" target="_blank" onClick={()=>{getData({name: 'Кто-то смотрит местоположения '})}}>
                   <i className='icon-location'/>
-                  13B, Akademika Glushkov ave., Київ, 03187
+                  Декабристов 87а, Васильков Киевс'кая область, 08602
                 </a>
 
               </li>
-              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 67 270 57 53'})}}>
-                <a href="tel:380672705753">
+              <li >
+                <a href="tel:380672705753" onClick={()=>{getData({name: 'Звонят по номеру: 380 67 270 57 53'})}}>
                   <i className='icon-phone'/>
                   067 270 57 53
                 </a>
               </li>
-              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 93 371 51 84'})}}>
-                <a href="tel:380933715184" >
+              <li >
+                <a href="tel:380933715184" onClick={()=>{getData({name: 'Звонят по номеру: 380 93 371 51 84'})}}>
                   <i className='icon-phone'/>
                   093 371 51 84
                 </a>
               </li>
-              <li onClick={()=>{getData({name: 'Звонят по номеру: 380 95 733 14 90'})}}>
-                <a href="tel:380957331490">
+              <li >
+                <a href="tel:380957331490" onClick={()=>{getData({name: 'Звонят по номеру: 380 95 733 14 90'})}}>
                   <i className='icon-phone'/>
                   095 733 14 90
                 </a>
               </li>
-              <li onClick={()=>{getData({name: 'Кто-то смотрит телеграм'})}}>
-                <a href="tg://resolve?domain=diamantikc">
+              <li >
+                <a href="tg://resolve?domain=grand_bud" onClick={()=>{getData({name: 'Кто-то смотрит телеграм'})}}>
                   <i className='icon-paper-plane-empty'/>
                   Telegram
                 </a>
               </li>
-              <li onClick={()=>{getData({name: 'Кто-то нажал на почту!'})}}>
-                <a href="mailto:grabuds@ukr.net">
+              <li >
+                <a href="mailto:grabuds@ukr.net" onClick={()=>{getData({name: 'Кто-то нажал на почту!'})}}>
                   <i className='icon-mail'/>
                   grabuds@ukr.net
                 </a>
