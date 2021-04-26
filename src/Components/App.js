@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import axios from 'axios';
+import ReactPixel from 'react-facebook-pixel';
 import Header from './Layers/Header';
 import Main from './Main';
 import About from './About';
@@ -61,6 +62,14 @@ class App extends React.Component {
     .then((res)=>{
       console.log(res);
       if(res.data ==='ok'){
+        const advancedMatching = { }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+        const options = {
+          autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+          debug: false, // enable logs
+        };
+        ReactPixel.init('188953069617122', advancedMatching, options);
+
+        ReactPixel.trackSingle('188953069617122', 'Lead', data);
         if(data.name === 'Просит позвонить!'){
           alert('Ожидай звонка!');
         }

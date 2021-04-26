@@ -6,13 +6,37 @@ class About extends React.Component {
       <div className="about">
         <div className="content-box">
         <h1>О нас</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem velit illum eveniet eaque natus incidunt a vitae, eligendi, nihil expedita facilis non cupiditate. Autem aut, explicabo non et odio sunt veritatis, ipsa quam distinctio qui nam iure optio impedit neque. In ipsa voluptates laboriosam, hic alias, fugit porro eligendi adipisci!</p>
-        <p>Officiis eveniet repellendus voluptatum nobis at deserunt nesciunt quis eligendi error soluta ut quia sapiente impedit, dolore, numquam labore ipsum? Necessitatibus minima culpa accusamus, sed quasi aliquid inventore minus suscipit. Ut minima cupiditate, odio ducimus, voluptates harum ea! Cumque placeat, aliquid aperiam ut nisi sunt eius iure maxime necessitatibus quo.</p>
-        <p>Harum, error officia voluptas nihil sequi vitae cum est illum cupiditate. Iusto ea optio dolorum placeat rerum voluptatem impedit non ipsa, culpa nisi veritatis perspiciatis cum velit nulla, itaque ipsam dignissimos et quidem error numquam, voluptates aut nostrum amet. Culpa tempore vel magni soluta veniam alias maxime cumque error in.</p>
-        <p>Natus rerum animi perspiciatis nulla officiis, laboriosam culpa tenetur neque velit ipsa non nemo quas, unde praesentium asperiores. Quam omnis nemo qui harum quo possimus doloremque quisquam fuga quasi nihil dolor modi officia, et neque delectus hic placeat enim ullam molestias accusantium veritatis nostrum aliquid dolores aut illo? Quis, laborum.</p>
-        <p>Asperiores aspernatur dignissimos tenetur sequi quos? Molestiae laborum vel et ducimus iure. Ipsa eum perspiciatis numquam eligendi neque, ipsum labore error, explicabo dolor asperiores, officia quisquam! Obcaecati aspernatur consectetur minus eum repellat! Deserunt aut quidem placeat modi? Fugiat reiciendis magnam, repellendus ipsam officiis, architecto molestiae, impedit sunt quae vero ipsum?</p>
+        <p>Гранд Буд Сервис - одна из надёжных ремонтно-строительных компаний, которая работает на результат. Предоставляет полный комплекс ремонтно-строительных услуг. Приоритетными направлениями деятельности компании являются проектирование и реализация домов и коттеджей “под ключ”, дизайнерские проекты, ландшафтные работы, устройство кровель и фасадов.</p>
+        <p>При строительстве домов и коттеджей, как и при ремонте квартир мы используем исключительно высококачественные материалы. Мы гордимся каждым реализованным проектом ведь делаем качественно, быстро и в соответствии со стандартами и требованиями заказчика. Благодаря ответственным партнерским отношениям с поставщиками материалов, компания предлагает цены со скидками, помогает оптимизировать расходы.</p>
+        <p>Гарантия качества  компании «Гранд Буд Сервис» Обратившись в нашу компанию, Вы получаете гарантию на качество наших работ! Мы сделаем для Вас ремонт любой сложности профессионально и качественно!</p>
+        <p>Комплекс услуг по следующим направлениям:</p>
+        <ul>
+          <li>Разрабатываем дизайн-проекты;</li>
+          <li>Выполняем строительные и ремонтные работы;</li>
+          <li>Делаем монтаж внутренних коммуникаций ;</li>
+          <li>Осуществляем ремонт полов и потолков, монтаж покрытий;</li>
+          <li>Изготавливаем деревянные лестницы;</li>
+          <li>Фасадные работы</li>
+          <li>Сантехнические работы</li>
+          <li>Малярные и отделочные работы</li>
+          <li>Штукатурные работы, покраска и поклейка стен;</li>
+          <li>Все виды бетонных работ</li>
+        </ul>
+        <p>Наша задача - в максимально сжатые сроки качественно выполнить поставленные заказчиком задачи.</p>
+        <p>Наши преимущества: </p>
+        <ul>
+          <li>сертификация всех видов услуг</li>
+          <li>широкий ассортимент предоставляемых услуг</li>
+          <li>оптимальные сроки выполнения работ</li>
+          <li>собственная спецтехника</li>
+          <li>низкие цены</li>
+          <li>система скидок для постоянных клиентов</li>
+          <li>гарантии качества материалов и работ</li>
+          <li>весь спектр услуг в одном месте</li>
+        </ul>
+        <p>Мы готовы удовлетворить практически все запросы наших клиентов.</p>
         </div>
-        
+
       </div>
     )
   }
